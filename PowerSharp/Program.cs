@@ -17,7 +17,7 @@
         static void Main(string[] args)
         {
             //Display initial menu
-            string menu = "Please choose an option:\n(1) ping a website";
+            string menu = "Please choose an option:\n(1) Ping a website\n(2) Get user's name from AD";
             string lineBreak = "\n============================================\n";
             Console.WriteLine(menu);
 
@@ -30,6 +30,8 @@
                 //Run the matching script
                 if (command == "1")
                     Console.WriteLine(Scripts.Ping.PingResult());
+                else if (command == "2")
+                    Console.WriteLine(Scripts.GetAdUser.GetAdUserResult("UsernameGoesHere"));
 
                 Console.WriteLine(lineBreak);
                 Console.WriteLine(menu);
