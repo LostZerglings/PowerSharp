@@ -18,14 +18,14 @@ You can find the various scripts under the Scripts folder.
 When trying to code with powershell you will need the System.Management.Automation reference. 
 
 ### What it covers
-Ping Script:
+Ping Script:<br />
 Demonstrates how to run a simple command using the AddScript command and access the base result to return the entire output
 
-GetAdUser Script:
-Shows how to run an active directory script and return a specific value instead of the entire script output 
+GetAdUser Script:<br />
+Shows how to use the AddCommand and AddArgument commands and run an active directory script and return a specific value instead of the entire script output 
 
-GetFileLength Script:
-Shows how to return multiple specified values from a script run against the local machine
+GetFileLength Script:<br />
+Shows how to run another AddScript command but return multiple specified values from a script run against the local machine
 
 ### How The Code Works
 
