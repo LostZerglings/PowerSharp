@@ -1,4 +1,4 @@
-# H1 PowerSharp
+# PowerSharp
 
 The PowerSharp repository is a collection of various powershell scripts that are invoked through C# code. 
 
@@ -6,13 +6,13 @@ The code and subsequent script methods should give you everything you need to ge
 
 One of the advantages or running the scripts through C# is that you can not only add additional verifications, logic, and visuals to the tool, but you could also streamline complex scripts into a contained tool so a basic user would be able to run them.
 
-### H3 Getting Started
+### Getting Started
 
 To get strted just load the solution. The code is formated as a console application with a menu.
 The purpose of this solution is to provide samples on how to code more complex applications yourself. NOT to function as that tool. 
 
 You can find the various scripts under the Scripts folder.
 
-### H3 Prerequisites
+### Prerequisites
 
 When trying to code with powershell you will need the System.Management.Automation reference. 
