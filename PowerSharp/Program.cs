@@ -17,7 +17,7 @@
         static void Main(string[] args)
         {
             //Display initial menu
-            string menu = "Please choose an option:\n(1) Ping a website\n(2) Get user's name from AD";
+            string menu = "Please choose an option:\n(1) Ping a website\n(2) Get user's name from AD\n(3) Get File Length";
             string lineBreak = "\n============================================\n";
             Console.WriteLine(menu);
 
@@ -31,7 +31,17 @@
                 if (command == "1")
                     Console.WriteLine(Scripts.Ping.PingResult());
                 else if (command == "2")
-                    Console.WriteLine(Scripts.GetAdUser.GetAdUserResult("UsernameGoesHere"));
+                {
+                    Console.WriteLine("Please enter a username:");
+                    string userName = Console.ReadLine().Trim();
+                    Console.WriteLine(Scripts.GetAdUser.GetAdUserResult(userName));
+                }
+                else if (command == "3")
+                {
+                    Console.WriteLine("Please enter the path:");
+                    string path = Console.ReadLine().Trim();
+                    Console.WriteLine(Scripts.GetFileLength.FileLengthResult(path));
+                }
 
                 Console.WriteLine(lineBreak);
                 Console.WriteLine(menu);

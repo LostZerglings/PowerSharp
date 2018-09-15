@@ -49,6 +49,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scripts\GetAdUser.cs" />
+    <Compile Include="Scripts\GetFileLength.cs" />
     <Compile Include="Scripts\Ping.cs" />
   </ItemGroup>
   <ItemGroup>
