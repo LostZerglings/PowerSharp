@@ -17,7 +17,17 @@ You can find the various scripts under the Scripts folder.
 
 When trying to code with powershell you will need the System.Management.Automation reference. 
 
-### Sample Code
+### What it covers
+Ping Script:
+Demonstrates how to run a simple command using the AddScript command and access the base result to return the entire output
+
+GetAdUser Script:
+Shows how to run an active directory script and return a specific value instead of the entire script output 
+
+GetFileLength Script:
+Shows how to return multiple specified values from a script run against the local machine
+
+### How The Code Works
 
 In order to call a powershell script you'll first need to initialize an instance of powershell. Since it can be disposed, I'd recommmend you wrap it in a using block. 
 
