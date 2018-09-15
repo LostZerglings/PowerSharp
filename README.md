@@ -16,3 +16,32 @@ You can find the various scripts under the Scripts folder.
 ### Prerequisites
 
 When trying to code with powershell you will need the System.Management.Automation reference. 
+
+### Sample Code
+
+In order to call a powershell script you'll first need to initialize an instance of powershell. Since it can be disposed, I'd recommmend you wrap it in a using block. 
+
+```
+using (PowerShell powerShell = PowerShell.Create())
+{
+
+}
+
+```
+
+Then you can add any powershell script to the code just by adding it as a scring to your powershell object.
+
+```
+powerShell.AddScript("My Script Goes Here");
+```
+**Note:** 
+you may need to do some formating if your script has quotes or escape characters or load the script from a file using a stream. 
+
+Finally you'll need to invoke the script. If you want to access individual objects of the result you'll want to look through them using a foreach loop. 
+
+```
+foreach (PSObject result in powerShell.Invoke())
+{
+    //do something with the results
+}
+```
